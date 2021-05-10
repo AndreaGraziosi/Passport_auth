@@ -13,7 +13,7 @@ const expressSession = require('express-session')({
 });
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(expressSession);
 
 const port = process.env.PORT || 3000;
